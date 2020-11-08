@@ -1,3 +1,4 @@
+%store 5 images of each severity
 clc; clear all;
 
 numFiles = 5;
