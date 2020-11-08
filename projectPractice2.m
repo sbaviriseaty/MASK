@@ -1,3 +1,4 @@
+%Import data - left vs right
 clc; clear all;
 
 cd M:\Documents\MATLAB\BME3053C\train
