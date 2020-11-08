@@ -1,3 +1,4 @@
+%observing if our dataset's distibution is comparable to entire dataset's
 clc; clear all;
 
 cd M:\Documents\MATLAB\BME3053C\train
