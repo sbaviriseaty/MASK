@@ -2,6 +2,7 @@
 clc; clear all;
 
 numFiles = 5;
+%address of new batch folder
 address = 'M:\Documents\MATLAB\BME3053C\batch1Redo';
 mkdir 'M:\Documents\MATLAB\BME3053C\batch1Redo'
 
