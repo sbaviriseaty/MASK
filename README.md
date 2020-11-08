@@ -1,29 +1,15 @@
 # MASK Inc. 
 
- ## Project Title:  
+## [importing](https://github.com/sbaviriseaty/MASK/tree/main/importing)
 
- ## Abstract & Specific Aims:  
+All scripts used to sort and organize images in dataset.
 
- ## Significance & Scope: 
+* fileImporting.m
+* fileImportAnalysis.m
 
- ## Data Source:  
+## [testing](https://github.com/sbaviriseaty/MASK/tree/main/testing)
 
- ### Website 
+All scripts used to create batch files for systematic testing.
 
- ### Dataset Size 
-
- ### Dataset Description 
-
- ## Approach:  
-
- ## Member Responsibilities: 
-
- ### Maria Cardei 
-
- ### Anisha Saripalli 
-
- ### Sruthika Baviriseaty 
-
- ### Kaltra Moci 
-
- ## References:  
+* sampleImageCompiling.m
+* sampleImageCSVGeneration.m
