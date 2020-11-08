@@ -1,7 +1,9 @@
 clc; clear;
-
+%tic & toc were used to count how long this entire program takes to run (just out of curiousity & also it was taking a while)
 tic
+%navigating to location of sample images
 cd M:\Documents\MATLAB\BME3053C\sample
+%dir lists files and folders in the current folder with matching extension (* is a 'wildcard')
 files = dir('*.jpeg');
 numFiles = length(files);
 images = cell(1 , numFiles);
