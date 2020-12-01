@@ -7,7 +7,7 @@ cd 'M:/Documents/MATLAB/BME3053C/batch1'
 for i = 1:25
     ds_left = imageDatastore('*_left.jpeg');
     left_files = ds_left.Files;
-    image = imread(left_files{20});
+    image = imread(left_files{i});
     grayImage = rgb2gray(image);  
     histAdjustedGray = adapthisteq(grayImage);
     greenImage = image(:,:,2);  

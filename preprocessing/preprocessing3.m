@@ -2,7 +2,7 @@ clc; clear all;
 % https://www.mathworks.com/matlabcentral/fileexchange/50839-novel-retinal-vessel-segmentation-algorithm-fundus-images
 cd 'M:/Documents/MATLAB/BME3053C/batch1'
 
- for i = 1:5
+ for i = 1:25
     ds_left = imageDatastore('*_left.jpeg');
     left_files = ds_left.Files;
     image = imread(left_files{i});
@@ -22,6 +22,5 @@ cd 'M:/Documents/MATLAB/BME3053C/batch1'
     bw(cc.PixelIdxList{idx}) = 0;
     cc_1 = bwconncomp(bw, 26);
     removeVessels = bwpropfilt(bw, 'Eccentricity', [0, 0.9]);
-     imshow(removeVessels);
  end
     

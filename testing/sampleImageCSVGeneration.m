@@ -1,4 +1,3 @@
-%create Excel spreadsheet recording names and labels of all sample dataset images
 clc; clear all;
 
 labels = readtable('trainLabels.csv');

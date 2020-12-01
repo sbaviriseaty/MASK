@@ -6,17 +6,17 @@ cd 'M:/Documents/MATLAB/BME3053C/batch1'
 % no denoising (did not seem necessary)
 
 hold on
-for i = 1:25
+for i = 1:5
     ds_left = imageDatastore('*_left.jpeg');
     left_files = ds_left.Files;
     image = imread(left_files{i});
     greenImage = image(:,:,2);    
     histAdjustedGreen = adapthisteq(greenImage);
     histAdjustedGreen = imadjust(histAdjustedGreen);
-    diffImage = imsubtract(greenImage, histAdjustedGreen);
-     threshold = graythresh(diffImage);
-     binarized = imbinarize(diffImage, threshold);
-     subplot(5,5,i)   
-   imshowpair(image, histAdjustedGreen, 'diff');    
+%     diffImage = imsubtract(greenImage, histAdjustedGreen);
+%      threshold = graythresh(diffImage);
+%      binarized = imbinarize(diffImage, threshold);
+%      subplot(5,5,i)   
+   imshow(histAdjustedGreen);    
 end
 hold off
