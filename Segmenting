@@ -1,7 +1,7 @@
 clc; clear ; close all
 
 filename = '13714_left.jpeg';
-
+path = 'M:/Documents/MATLAB/BME3053C/batch1';
 RGB = imread([path filename]);
 figure
 imshow(RGB)
