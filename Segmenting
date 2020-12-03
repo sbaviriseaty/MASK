@@ -1,7 +1,7 @@
 clc; clear ; close all
 
 filename = '13714_left.jpeg';
-path = 'E:\Outsourced\Zohaib\Ratinopathy\Dataset\';
+
 RGB = imread([path filename]);
 figure
 imshow(RGB)
