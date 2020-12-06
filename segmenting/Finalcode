@@ -1,80 +1,53 @@
 clc; clear ; close all
 
- 
-% path = 'M:\Desktop\compapp\MASK Project\Mask\batch1\';
-% files = dir(strcat(path,'\\*.jpeg'));
-% RGB = imread(strcat(path,files(ii).name))
+%open an image one at a time
 RGB = imread('16309_left(n).jpeg');
 
+%Display original image
 figure
-
 imshow(RGB)
-
 title('Original Image')
 
- 
-
+%Image preprocessing 
 % extract only green channel
-
 I = RGB(:,:,2);
-
 figure
-
 imshow(I)
-
 title('Grayscale Image')
 
- 
-
+%Enhance image
 J = adapthisteq(I);
-
 figure
-
 imshow(J)
-
 title('Enhanced Image')
 
- 
-
+%Begin segmentation
 neighborhoodSize = [3 3];
-
 K = medfilt2(J,neighborhoodSize);
 
 figure
-
 imshow(K);
-
 title('Median Filter')
 
- 
-
 windowWidth = 3;
-
 kernel = ones(windowWidth) / windowWidth ^2;
-
 Kc = conv2(K, kernel,'same');
-
 B = (uint8(Kc)*255) - K;
 
 figure
-
 imshow(B);
-
 title('Image Prepration for Thresholding')
 
- 
 %This is the segmentation result and the part we will use for
 %classification
 BW1 = B > 85;
 
 figure
-
 imshow(BW1);
-
 title('Binary Image for vessels ')
 
  
-
+%The following code makes more segmentation stuff, but is not needed for our classification so I left it commented out
 % BW2 = imcomplement(J > 28);
 % 
 % figure
@@ -83,9 +56,7 @@ title('Binary Image for vessels ')
 % 
 % title('Binary Image for Background')
 
- 
-
-% BW = xor(BW1,BW2);
+ % BW = xor(BW1,BW2);
 % 
 % figure
 % 
@@ -93,40 +64,22 @@ title('Binary Image for vessels ')
 % 
 % title('Binary Image')
 
- 
-% 
-% % obtained the segmented image
-% 
+% % obtained the masked image
 % maskedImage = J;
-% 
 % maskedImage(~BW) = 0;
-
  
-% 
 % % visualize the segmented image
-% 
 % figure
-% 
 % imshow(maskedImage)
-% 
 % title('Masked Image')
 
- 
-
-%Classification
-
+ %Classification
 blackPixels = numel(BW1)-sum(BW1(:));
-
 count_0 = 0;
-
 count_1 = 0;
-
 count_2 = 0;
-
 count_3 = 0;
-
 count_4 = 0;
-
 if blackPixels < 300000
 
     fprintf('The severity is 0 on 0-4 scale');
