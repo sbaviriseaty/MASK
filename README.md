@@ -23,3 +23,5 @@ Anisha Saripalli - [email](mailto:asaripalli@ufl.edu) <br />
 Sruthika Baviriseaty - [email](mailto:sbaviriseaty@ufl.edu) <br />
 Kaltra Moci - [email](mailto:kaltramoci@ufl.edu)
 
+Note: This should not be used in any medical circumstances. We are not responsible for any damage that occurs with use of this project.
+
