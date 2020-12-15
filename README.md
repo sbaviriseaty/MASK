@@ -3,10 +3,10 @@
 ## Detecting Diabetic Retinopathy in Fundus Images using Image Processing 
 ## Objective
 Diabetic Retinopathy (DR) is the leading cause of blindness in American adults.  The significance of this issue has led to the creation of this project in order to make it easier to detect DR. The goal is that it will lower the instances of DR leading to blindness by allowing people to detect DR at its early stages.
-
-### Built With
+## Built With
 * MATLAB R2020b
 
+**Data:** Data is from Kaggle’s 2015 Diabetic Retinopathy Detection Competition 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -21,9 +21,11 @@ See the [open issues](https://github.com/sbaviriseaty/MASK/issues) for a list of
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 <!-- CONTACT -->
-## Contact
-Your Name - [email](mailto:example@website.com)
-
+## Created by
+Maria Cardei - [email](mailto:example@website.com)
+Anisha Saripalli
+Sruthika Baviriseaty
+Kaltra Moci
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * []()
