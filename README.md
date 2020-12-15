@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-## Computer Applications for BME Fall 2020: Team MASK
+# Computer Applications for BME Fall 2020: Team MASK
 ## Detecting Diabetic Retinopathy in Fundus Images using Image Processing 
 ## Objective
 Diabetic Retinopathy (DR) is the leading cause of blindness in American adults.  The significance of this issue has led to the creation of this project in order to make it easier to detect DR. The goal is that it will lower the instances of DR leading to blindness by allowing people to detect DR at its early stages.
